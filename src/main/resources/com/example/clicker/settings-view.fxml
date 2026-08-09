@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clicker.SettingsController">
+   <children>
+      <Button layoutX="257.0" layoutY="85.0" mnemonicParsing="false" onAction="#onButtonWhite" text="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="85.0" mnemonicParsing="false" onAction="#onButtonBlack" text="BLACK">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Label layoutX="31.0" layoutY="175.0" text="Lang :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="14.0" text="Them :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="31.0" layoutY="238.0" mnemonicParsing="false" onAction="#onButtonUs" text="US">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button layoutX="292.0" layoutY="238.0" mnemonicParsing="false" onAction="#onButtonUk" text="UK">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRu" layoutX="160.0" layoutY="238.0" mnemonicParsing="false" onAction="#onButtonRu" text="RU">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button layoutX="160.0" layoutY="462.0" mnemonicParsing="false" onAction="#onButtonBack" text="Back">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
