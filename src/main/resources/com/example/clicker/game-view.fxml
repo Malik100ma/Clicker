@@ -7,43 +7,49 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600" prefWidth="500.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clicker.GameController">
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
-   <children>
-      <Button fx:id="btnClick" layoutX="150.0" layoutY="250.0" mnemonicParsing="false" onAction="#onButtonClick" styleClass="button-click" text="Click !">
-         <font>
-            <Font name="Arial" size="50.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnUpgrade" layoutX="150.0" layoutY="14.0" mnemonicParsing="false" onAction="#onButtonUpgrade" prefHeight="91.0" prefWidth="217.0" styleClass="button-upgrade" text="Upgrade">
-         <font>
-            <Font size="42.0" />
-         </font>
-      </Button>
-      <Label fx:id="lblCount" layoutY="150.0" text="Click : 0" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="67.0" />
-         </font>
-      </Label>
-      <Label layoutX="91.0" layoutY="371.0" text="maximum upgrade 5" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="31.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblUpgrade" layoutX="36.0" layoutY="118.0" text="Your upgrade : 1, next upgrade cost : 50" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnBack" layoutX="207.0" layoutY="485.0" mnemonicParsing="false" onAction="#onButtonBack" text="Back">
-         <font>
-            <Font name="System Bold" size="29.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="CLOSED_HAND" />
-         </cursor>
-      </Button>
-   </children>
+<AnchorPane prefHeight="600" fx:id="root" prefWidth="500.0" styleClass="root" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.clicker.GameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <Button fx:id="btnClick" layoutX="150.0" layoutY="250.0" mnemonicParsing="false" onAction="#onButtonClick"
+                styleClass="button-click" text="Click !">
+            <font>
+                <Font name="Arial" size="50.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnUpgrade" layoutX="150.0" layoutY="14.0" mnemonicParsing="false" onAction="#onButtonUpgrade"
+                prefHeight="91.0" prefWidth="217.0" styleClass="button-upgrade" text="Upgrade">
+            <font>
+                <Font size="42.0"/>
+            </font>
+        </Button>
+        <Label fx:id="lblCount" layoutY="150.0" text="Click : 0" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="67.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblMaxUpgrade" layoutX="91.0" layoutY="371.0" text="maximum upgrade 5" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="31.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblUpgrade" layoutX="9.0" layoutY="118.0" text="Your upgrade : 1, next upgrade cost : 50"
+               textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0"/>
+            </font>
+        </Label>
+        <Button fx:id="btnBack" layoutX="207.0" layoutY="485.0" mnemonicParsing="false" onAction="#onButtonBack"
+                text="Back">
+            <font>
+                <Font name="System Bold" size="29.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="CLOSED_HAND"/>
+            </cursor>
+        </Button>
+    </children>
 </AnchorPane>

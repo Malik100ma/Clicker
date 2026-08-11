@@ -1,5 +1,6 @@
 package com.example.clicker;
 
+import javafx.css.Stylesheet;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
@@ -19,10 +20,17 @@ import static com.example.clicker.Config.nameApp;
 
 public class Application extends javafx.application.Application {
 
-    private static Scene scene;
+    public static int clickCount = 0, multiplication = 1, currentMultiplication = 1;
+
+    public static String theme = "black";
+
+    public static String lang = "us";
+
+    public static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
+
         scene = new Scene(loadFXML("menu-view"), 500, 600);
         stage.setTitle(nameApp);
         stage.setResizable(false);
@@ -39,7 +47,6 @@ public class Application extends javafx.application.Application {
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
-
 
     public static void main(String[] args) {
         launch(args);
