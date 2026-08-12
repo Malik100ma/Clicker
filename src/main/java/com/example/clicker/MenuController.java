@@ -11,9 +11,9 @@ import java.io.IOException;
 
 public class MenuController {
 
-    public static String buttonWhite = "-fx-background-color: #dfdfdf;-fx-border-color: #000000;-fx-border-width: 4px;-fx-border-radius: 12px;-fx-background-radius: 12px;";
+    public static String buttonWhite = "-fx-text-fill: #000000; -fx-background-color: #dfdfdf;-fx-border-color: #000000;-fx-border-width: 4px;-fx-border-radius: 12px;-fx-background-radius: 12px;";
 
-    public static String buttonBlack = "-fx-background-color: #808080";
+    public static String buttonBlack = "-fx-text-fill: #000000; -fx-background-color: #808080";
 
     public static String rootWhite = "-fx-background-color: #ececec;";
 

@@ -39,7 +39,7 @@ public class GameController {
         } else if (theme.equals("white")) {
             btnClick.setStyle(MenuController.buttonWhite);
             btnBack.setStyle(MenuController.buttonWhite);
-            btnUpgrade.setStyle(MenuController.buttonWhite+"-fx-te");
+            btnUpgrade.setStyle(MenuController.buttonWhite);
             root.setStyle(MenuController.rootWhite);
             lblMaxUpgrade.setStyle(MenuController.text);
             lblUpgrade.setStyle(MenuController.text);

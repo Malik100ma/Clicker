@@ -32,6 +32,13 @@ public class Application extends javafx.application.Application {
     public void start(Stage stage) throws IOException {
 
         scene = new Scene(loadFXML("menu-view"), 500, 600);
+        SaveSystem.loadData();
+
+        // 2. Перехватываем событие ЗАКРЫТИЯ ОКНА (клика по крестику)
+        stage.setOnCloseRequest(event -> {
+            System.out.println("Приложение закрывается, сохраняем данные...");
+            SaveSystem.saveData(); // Автоматическое сохранение перед выходом
+        });
         stage.setTitle(nameApp);
         stage.setResizable(false);
         stage.setScene(scene);
